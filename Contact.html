@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itampeed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4dfd3f694.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="screen"><i id="screen" class="fa-solid fa-bars" onclick="toggle()"></i></div>
+    <div class="container">
+        <div id="left" class="left">
+            <div class="logo">
+                <p class="icon fa fa-facebook">adoju</p>
+            </div>
+            <ul class="nav-bar">
+                <li> <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a> </li>
+                <li> <a href="About.html"><i class="fa-solid fa-user"></i>About</a> </li>
+                <li> <a href="Services.html"><i class="fa-solid fa-list"></i>Services</a> </li>
+                <li> <a href="Portfolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a> </li>
+                <li> <a id="active" href="Contact.html"><i class="fa-solid fa-phone"></i>Contact</a> </li>
+            </ul>
+            
+        </div>
+        <div class="right">
+            <div class="topic">
+                <h1>Contact me</h1>
+            </div>
+            <form onsubmit="Message(), reset()">
+                <label for="">Name</label>
+                <input type="text" id="text" placeholder="Your Name here." required>
+                <label for="">E-mail</label>
+                <input type="email" name="" id="email" placeholder="Your E-mail here" required> 
+                <label for="">Mobile</label>
+                <input type="number" name="" id="number" placeholder="Your Mobile Number Here" required>
+                <label for="">Your Message</label>
+                <textarea id="text" rows="5" placeholder="be detailed about your message" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <footer>
+            <p class="footer icon fa fa-facebook"> adoju 2022 | all rights reserved </p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+:root{
+    --bg-color: #e5e5e5;
+    --halfwhite: #f2f2f2;
+    --text: #000;
+    --color-red: #ff3a3a;
+    --color-red-hover: #f71010;
+    --textfont: 'Poppins', sans-serif;
+    --text-color: rgb(245, 238, 238);
+    --bg-skill: rgb(206, 206, 206);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color) ;
+    position: relative;
+}
+p, h1, h2, h3, h4, h5, h6, a, label{
+    font-family: var(--textfont);
+}
+button{
+    width: 120px;
+    background-color: var(--color-red);
+    height: 40px;
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+ button a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+button:hover{
+    background-color: var(--color-red-hover);
+    box-shadow: 1px 1px 6px black;
+}
+.container{
+    display: flex;
+}
+.topic{
+    display: block;
+    margin: 40px 40px;
+    border-bottom: 3px solid var(--color-red);
+    width: 200px;
+}
+.topic:after{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 3px;
+    margin-top: 9px;
+    background-color: var(--color-red);
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* ======= Left navbar ======= */
+.screen{
+    position: absolute;
+    margin: 10px;
+    padding: 5px;
+    display: none;
+}
+.screen i{
+    color: var(--color-red);
+    cursor: pointer;
+    font-size: 30px;
+}
+.left{
+    height: 100vh;
+    width: 20%;
+    background-color: var(--halfwhite);
+}
+.logo{
+    display: block;
+    text-align: center;
+}
+
+.logo p{
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.nav-bar { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    list-style: none;
+    padding: 0px;
+}
+
+.nav-bar li{
+    margin: 15px 0px;
+    width: 60%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    padding-bottom: 5px;
+}
+#active{
+    color: var(--color-red);}
+.nav-bar li i {
+   margin: 0px 12px;
+   cursor: pointer;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+}
+.nav-bar li a:hover, .nav-bar li i:hover{
+    color: var(--color-red-hover);
+}
+/* ========== Index file ========== */
+.right{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.index-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    padding: 0px 35px;
+}
+.index-intro{
+    width: 65%;
+    margin: 20px;
+}
+.index-img{
+    margin: 24px;
+}
+.index-img img{
+    height: 350px;
+}
+#web-dev{
+    color: var(--color-red);
+}
+
+/* ========== About me ========== */
+.about-intro{
+    height: auto;
+    display: block;
+    margin: 30px;
+    padding: 20px;
+}
+.about-intro h2 p{
+    color: var(--color-red);
+}
+.about-intro2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro2{
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro2-1{
+    width: 250px;
+    margin-top: 4px;
+}
+.intro2-1 h4{
+    border-bottom: 1px solid black;
+    width: 240px;
+    padding-bottom: 3px;
+ 
+}
+.intro2-1 p{
+    display: inline;
+}
+.intro2-2{
+    margin-top: 4px;
+    width: 260px;
+}
+.intro2-2 h4{
+    border-bottom: 1px solid black;
+    width: 240px;
+    padding-bottom: 3px;
+}
+.intro2-2 p{
+    display: inline;
+}
+
+.skills{
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skill1-1{
+    content: "";
+    width: 490px;
+    background-color: var(--bg-skill);
+    border-radius: 5px;
+    height: 12px;
+    margin-top: -20px;
+}
+.skill1-1in, .skill1-2in,.skill1-3in,.skill1-4in,.skill1-5in ,.skill1-6in{
+    background-color: var(--color-red);
+    width: 98%;
+    height: 12px;
+    border-radius: 5px;
+}
+.skill1-2in{
+    width: 94%;
+}
+.skill1-3in{
+    width: 78%;
+}
+.skill1-4in{
+    width: 80%;
+}
+.skill1-5in{
+    width: 65%;
+}
+.skill1-6in{
+    width: 88%;
+}
+.topicintro{
+    display: block;
+    width: 100%;
+}
+.topicskills{
+    display: block;
+    width: 100%;
+}
+.experience{
+    margin-top: 40px;
+}
+.Freelance{
+    margin-top: 40px;
+}
+
+/* ========== Portfolio Section ========== */
+.portfG, .portfW{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.portlogoimg1, .porthtmlimg1, .portwordpressimg1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.porthtml img, .portwordpress img, .portlogoimg1 img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    transition: all 0.2 s ;
+}
+.portlogoimg1 img:hover,.porthtml img:hover, .portwordpress img:hover{
+    box-shadow: 1px 1px 6px black;
+}
+.porthtml, .portwordpress, .portlogo{
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-skill);
+    border-radius: 23px;
+}
+.porthtml img, .portwordpress img{
+   width: 350px; 
+}
+
+/* ========== Contact Us ========== */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 30px auto;
+    margin-top: 70px;
+    height: 400px;
+    padding: 30px;
+    background-color: var(--bg-skill);
+    border-radius: 23px;
+}
+form input, form textarea{
+    padding: 5px;
+}
+
+/* ========== Services page ========== */
+.heavy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.servicescontainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    border-radius: 23px;
+}
+.services{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center  ;
+}
+.servicesin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.servGD, .servhtml, .servwp{
+    height: 250px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--bg-skill);
+    padding: 5px;
+}
+.first{
+    height: 150px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first i{
+    font-size: 35px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    color: var(--color-red);
+    background-color: var(--bg-color);
+}
+.first i:hover{
+    columns: var(--halfwhite);
+    background-color: var(--color-red);
+}
+

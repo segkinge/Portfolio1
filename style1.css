@@ -1,0 +1,51 @@
+@media only screen and (max-width:600px){
+    .left{
+        display: none;
+        position: absolute;
+        width: 90%;
+        z-index: 500;
+    }
+    button{
+        width: 150px;
+        margin-bottom: 10px;
+        color: rgb(240, 228, 228);
+    }
+    .skills{
+        padding-left: 0px;
+    }
+    .skill1-1{
+        content: "";
+        width: 300px;
+        background-color: var(--bg-skill);
+        border-radius: 5px;
+        height: 12px;
+        margin-top: -20px;
+    }
+    .screen{
+        display: block;
+        z-index: 999;
+    }
+    .right{
+        width: 100vw;
+        margin: 10px auto;
+        margin-bottom: 30px;
+        
+    }
+    .porthtml, .portwordpress, .portlogo{
+        padding: 6px;  
+        padding-bottom: 20px;      
+    }
+    .porthtml img, .portwordpress img, .portlogoimg1 img{
+        width: 260px;
+        height: 180px;
+    }
+    .porthtml img, .portwordpress img{
+        width: 280px; 
+     }
+     .heavy{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+
+}
